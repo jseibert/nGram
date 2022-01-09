@@ -8,8 +8,9 @@
 import Foundation
 
 public final class NGramCollection<N: NGramRepresentable>: Collection, Sequence {
-    let text: String
-    private(set) var grams = [N]()
+    public let text: String
+
+    private var grams = [N]()
 
     init(_ text: String) {
         self.text = text
